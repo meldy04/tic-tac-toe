@@ -13,12 +13,6 @@ public class MakeMoveUseCase implements MakeMoveInputBoundary {
 
     @Override
     public void makeMove(int row, int col) {
-        /*
-        Someone's been rearranging stuff. Try putting these fragments together:
-        (row, col)
-        board.makeMove
-        if (   ) {
-         */
         if(board.makeMove(row, col)) {
             char winner = board.checkWin();
             if (winner != '-') {
